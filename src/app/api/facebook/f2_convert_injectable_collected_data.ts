@@ -1,10 +1,9 @@
-import getPuppeteerBrowser from "../../getPuppeteerBrowser";
-import { I2_collected_full_html_element, I3_injectable_collected_data } from "../types";
-import { f1_collect_fb_raw_html_elements_obj } from "./f1_collect_fb_raw_html_elements_obj";
+
+import { I2_collected_full_html_element, I3_injectable_collected_data } from "./lib/types";
 
 
-const page = await getPuppeteerBrowser("url");
-const collectedData = await f1_collect_fb_raw_html_elements_obj(page);
+// const page = await getPuppeteerBrowser("url");
+// const collectedData = await f1_collect_fb_raw_html_elements_obj(page);
 
 
 export const f2_convert_injectable_collected_data = (
@@ -31,12 +30,6 @@ export const f2_convert_injectable_collected_data = (
 
         injectable_collected_fb_about_list: collectedData.collected_fb_about_list_element,
     };
-
-
-
-
-
-
     return injectableCollectedData;
 };
 
