@@ -1,11 +1,6 @@
 
 import { I2_collected_full_html_element, I3_injectable_collected_data } from "./lib/types";
 
-
-// const page = await getPuppeteerBrowser("url");
-// const collectedData = await f1_collect_fb_raw_html_elements_obj(page);
-
-
 export const f2_convert_injectable_collected_data = (
     collectedData: I2_collected_full_html_element
 ): I3_injectable_collected_data => {
