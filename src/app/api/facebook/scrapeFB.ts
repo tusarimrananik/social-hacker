@@ -6,7 +6,7 @@ export const scrapeFacebook = async (page: Page): Promise<Record<string, any>> =
         // Wait concurrently for all selectors (with a visible flag to ensure they’re rendered)
         const waitResults = await Promise.allSettled(
             Object.values(fbProfileSelectors).map(selector =>
-                page.waitForSelector(selector, { timeout: 15000, visible: true })
+                page.waitForSelector(selector, { timeout: 5000, visible: true })
             )
         );
 
@@ -80,6 +80,6 @@ export const scrapeFacebook = async (page: Page): Promise<Record<string, any>> =
         return scrapedData;
     } finally {
         // Ensure the page is closed regardless of errors
-        await page.close();
+        // await page.close();
     }
 };

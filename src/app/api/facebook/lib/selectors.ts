@@ -9,15 +9,3 @@ export const fbProfileSelectors: Record<string, string> = {
     about: "ul",
 };
 
-export const fbInjectionSelectors: Record<string, string> = {
-    profileName: '#mainName',
-    profilePicture: '.profilePhotoImage',
-    coverPicture: '.coverPhotoImage',
-    bio: '#bio',
-    isLocked: '#isLocked',
-    about: '.intro',
-    displayName: '.nameTop',
-    statusPic: '#statusPic',
-    friendsCount: '#friendsNumber',
-    friendsType: '#friendsText',
-};
